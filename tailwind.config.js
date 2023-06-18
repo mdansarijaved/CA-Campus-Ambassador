@@ -5,7 +5,14 @@ export default {
     "*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'dark-black': '#0D0E12',
+        'light-black': '#15181E',
+        'light-grey':'rgba(227, 229, 232, 0.52)',
+        'white':'rgba(227,229,232,0.9)',
+      },
+    }
   },
   plugins: [],
 }

@@ -13,24 +13,8 @@
     --gradient:linear-gradient(90deg, #6557FF 0%, #AA3FFF 29.43%, #AA3FFF 68.23%, #F8522E 100%);
 
 }
-body{
-    background: var(--dark-black);
-}
-header{
-    background-color: var(--dark-black);
-    .nav{
-        a{
-            color: var(--light-grey);
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
-            &:hover{
-                color: var(--white);
-            }
-        }
-    }
-}
+
 .landing{
-    background: var(--dark-black);
     .overlay{
         background: url('../Assets/Landing.png');
         background-repeat: no-repeat;
@@ -40,20 +24,5 @@ header{
         background: var(--gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-    h1{
-        color: var(--white);
-    }
-    p{
-        color: var(--light-grey);
-    }
-    button{
-        background:var(--white);
-        color: var(--dark-black);
-        transition: all 0.3s ease-in-out;
-        &:hover{
-            transform: scale(1.1);
-        }
-        border:none;
     }
 }
