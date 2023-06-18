@@ -46,13 +46,3 @@
     text-transform: uppercase;
   }
 }
-
-.gradientHeading {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-}
-.timelineStep {
-  background: var(--gradient);
-}
