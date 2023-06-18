@@ -1,124 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <title>CA</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./sass/style.css">
-  <title>CA</title>
-</head>
-
-<body class="bg-dark-black">
-
-  <header class="bg-dark-black absolute z-20 w-full h-[8vmin] flex justify-between items-center px-[8vmin]">
-    <div class="logo flex flex-row justify-center items-center">
-      <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]">
-      <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]">
-    </div>
-    <div class="nav flex flex-row justify-center items-center">
-      <a href="#"
-        class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer">Tech
-        Invent</a>
-      <a href="#"
-        class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer">Register</a>
-    </div>
-  </header>
-  <section class="landing bg-dark-black w-full h-[100vmin] flex flex-col justify-center items-center relative">
-    <div class="overlay h-[120vmin] w-full absolute top-0 left-0"></div>
-    <b class="text-[1.7vmin] font-semibold tracking-[0.7vmin] z-20">TECH INVENT</b>
-    <h1 class="text-[7vmin] font-light z-20 text-white">Become an Ambassador</h1>
-    <p class="text-[2vmin] font-normal text-center my-[0.5vmin] z-20 text-light-grey">Help businesses put financing on
-      autopilot</p>
-    <p class="text-[2vmin] font-normal text-center my-[0.5vmin] z-20 text-light-grey">so they can grow faster</p>
-    <button
-      class="text-[1.75vmin] px-[3vmin] py-[1.5vmin] font-medium rounded-[25px] my-[3vmin] z-20 cursor-pointer bg-white text-dark-black transition-all hover:scale-[1.1] border-none">Join
-      Us Now <span class="ml-[1.25vmin]">></span></button>
-  </section>
-  <section class="details px-[1vmin] mt-[30vmin]">
-    <div class="content rounded-[3vmin] bg-light-black w-full h-full p-[25vmin] pb-[15vmin] relative">
-      <div class="overlay absolute bottom-0 left-1/2 -translate-x-1/2">
-        <img src="/Assets/Group.png" alt="">
+  <body class="bg-dark-black">
+    <header
+      class="bg-dark-black absolute z-20 w-full h-[8vmin] flex justify-between items-center px-[8vmin]"
+    >
+      <div class="logo flex flex-row justify-center items-center">
+        <img
+          src="./img/logo.png"
+          alt="logo"
+          class="w-[10vmin] h-[10vmin] mx-[2vmin]"
+        />
+        <img
+          src="./img/logo.png"
+          alt="logo"
+          class="w-[10vmin] h-[10vmin] mx-[2vmin]"
+        />
       </div>
-      <section class="event flex flex-row justify-between items-center">
-        <div class="left flex flex-col justify-center items-start w-1/2">
-          <b class="text-[2vmin] font-semibold tracking-[0.5vmin] z-20 w-full">About The Event</b>
-          <h1 class="text-[8vmin] font-light z-20 text-white w-full">Biggest Tech Event</h1>
-          <p class="text-[3vmin] font-normal my-[0.5vmin] z-20 text-light-grey w-[85%] leading-[4.5vmin]">Tech Invent is
-            a visionary
-            series of events that aims to foster creativity, collaboration, and advancement within the tech industry.
-            <br> <br>
-            Our mission is to inspire and empower individuals to explore and embrace the limitless possibilities that
-            technology offers.
-          </p>
-          <button
-            class="text-[2vmin] px-[3.5vmin] py-[2vmin] font-medium rounded-[50px] my-[5vmin] z-20 cursor-pointer bg-[#22262F] text-white transition-all hover:scale-[1.1] border-none">Visit
-            the website <span class="ml-[1.25vmin]">></span></button>
-
+      <div class="nav flex flex-row justify-center items-center">
+        <a
+          href="#"
+          class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
+          >Tech Invent</a
+        >
+        <a
+          href="#"
+          class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
+          >Register</a
+        >
+      </div>
+    </header>
+    <section
+      class="landing bg-dark-black w-full h-[100vmin] flex flex-col justify-center items-center relative"
+    >
+      <div class="overlay h-[120vmin] w-full absolute top-0 left-0"></div>
+      <b class="text-[1.7vmin] font-semibold tracking-[0.7vmin] z-20"
+        >TECH INVENT</b
+      >
+      <h1 class="text-[7vmin] font-light z-20 text-white">
+        Become an Ambassador
+      </h1>
+      <p
+        class="text-[2vmin] font-normal text-center my-[0.5vmin] z-20 text-light-grey"
+      >
+        Help businesses put financing on autopilot
+      </p>
+      <p
+        class="text-[2vmin] font-normal text-center my-[0.5vmin] z-20 text-light-grey"
+      >
+        so they can grow faster
+      </p>
+      <button
+        class="text-[1.75vmin] px-[3vmin] py-[1.5vmin] font-medium rounded-[25px] my-[3vmin] z-20 cursor-pointer bg-white text-dark-black transition-all hover:scale-[1.1] border-none"
+      >
+        Join Us Now <span class="ml-[1.25vmin]">></span>
+      </button>
+    </section>
+    <section class="details px-[1vmin] mt-[30vmin]">
+      <div
+        class="content rounded-[3vmin] bg-light-black w-full h-full p-[25vmin] pb-[15vmin] relative"
+      >
+        <div class="overlay absolute bottom-0 left-1/2 -translate-x-1/2">
+          <img src="/Assets/Group.png" alt="" />
         </div>
-        <div class="right">
-          <img class="scale-150" src="/Assets/vb 1.png" alt="">
-        </div>
-      </section>
-      <section class="event flex flex-row-reverse justify-between items-center mt-[20vmin]">
-        <div class="left flex flex-col justify-center items-start w-1/2">
-          <b class="text-[2vmin] font-semibold tracking-[0.5vmin] z-20 w-full">About The Event</b>
-          <h1 class="text-[8vmin] font-light z-20 text-white w-full">Biggest Tech Event</h1>
-          <p class="text-[3vmin] font-normal my-[0.5vmin] z-20 text-light-grey w-[85%] leading-[4.5vmin]">Tech Invent is
-            a visionary
-            series of events that aims to foster creativity, collaboration, and advancement within the tech industry.
-            <br> <br>
-            Our mission is to inspire and empower individuals to explore and embrace the limitless possibilities that
-            technology offers.
-          </p>
-          <button
-            class="text-[2vmin] px-[3.5vmin] py-[2vmin] font-medium rounded-[50px] my-[5vmin] z-20 cursor-pointer bg-[#22262F] text-white transition-all hover:scale-[1.1] border-none">Visit
-            the website <span class="ml-[1.25vmin]">></span></button>
-
-        </div>
-        <div class="right">
-          <img class="scale-150" src="/Assets/hgf 1.png" alt="">
-        </div>
-      </section>
-      <section class="opp w-full min-h-[70vmin] bg-[#0D0F12] mt-[10vmin] rounded-[3vmin] p-[10vmin] flex flex-col">
-        <b class="text-[1.5vmin] font-semibold tracking-[0.2vmin] z-20 w-full">Benefits & Incentives</b>
-        <h1 class="text-[5vmin] font-light z-20 text-white w-full">Grow by helping</h1>
-        <h1 class="text-[5vmin] font-light z-20 text-white w-full">You grow with others</h1>
-        <div class="grid grid-cols-4 mt-[10vmin]">
-          <div class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]">
-            <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
-            <p class="text-[2vmin] text-white mt-[5vmin]">Get Exclusive Certificates</p>
-            <p class="text-[1.8vmin] mt-[2vmin] text-[#7e838f]">Receive personalized and exclusive certificates of
-              recognition for your contributions as a Tech Invent CU Campus Ambassador, highlighting your leadership and
-              impact.</p>
+        <section class="event flex flex-row justify-between items-center">
+          <div class="left flex flex-col justify-center items-start w-1/2">
+            <b class="text-[2vmin] font-semibold tracking-[0.5vmin] z-20 w-full"
+              >About The Event</b
+            >
+            <h1 class="text-[8vmin] font-light z-20 text-white w-full">
+              Biggest Tech Event
+            </h1>
+            <p
+              class="text-[3vmin] font-normal my-[0.5vmin] z-20 text-light-grey w-[85%] leading-[4.5vmin]"
+            >
+              Tech Invent is a visionary series of events that aims to foster
+              creativity, collaboration, and advancement within the tech
+              industry. <br />
+              <br />
+              Our mission is to inspire and empower individuals to explore and
+              embrace the limitless possibilities that technology offers.
+            </p>
+            <button
+              class="text-[2vmin] px-[3.5vmin] py-[2vmin] font-medium rounded-[50px] my-[5vmin] z-20 cursor-pointer bg-[#22262F] text-white transition-all hover:scale-[1.1] border-none"
+            >
+              Visit the website <span class="ml-[1.25vmin]">></span>
+            </button>
           </div>
-          <div class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]">
-            <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
-            <p class="text-[2vmin] text-white mt-[5vmin]">Networking Opportunities</p>
-            <p class="text-[1.8vmin] mt-[2vmin] text-[#7e838f]">Connect with industry professionals, guest speakers, and
-              fellow ambassadors, expanding your professional network and creating valuable connections.</p>
+          <div class="right">
+            <img class="scale-150" src="/Assets/vb 1.png" alt="" />
           </div>
-          <div class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]">
-            <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
-            <p class="text-[2vmin] text-white mt-[5vmin]">Campus Ambassador Award</p>
-            <p class="text-[1.8vmin] mt-[2vmin] text-[#7e838f]">Stand a chance to be recognized as the "Campus
-              Ambassador of the Year" based on your exceptional performance and dedication, with a special prize and
-              recognition.</p>
+        </section>
+        <section
+          class="event flex flex-row-reverse justify-between items-center mt-[20vmin]"
+        >
+          <div class="left flex flex-col justify-center items-start w-1/2">
+            <b class="text-[2vmin] font-semibold tracking-[0.5vmin] z-20 w-full"
+              >About The Event</b
+            >
+            <h1 class="text-[8vmin] font-light z-20 text-white w-full">
+              Biggest Tech Event
+            </h1>
+            <p
+              class="text-[3vmin] font-normal my-[0.5vmin] z-20 text-light-grey w-[85%] leading-[4.5vmin]"
+            >
+              Tech Invent is a visionary series of events that aims to foster
+              creativity, collaboration, and advancement within the tech
+              industry. <br />
+              <br />
+              Our mission is to inspire and empower individuals to explore and
+              embrace the limitless possibilities that technology offers.
+            </p>
+            <button
+              class="text-[2vmin] px-[3.5vmin] py-[2vmin] font-medium rounded-[50px] my-[5vmin] z-20 cursor-pointer bg-[#22262F] text-white transition-all hover:scale-[1.1] border-none"
+            >
+              Visit the website <span class="ml-[1.25vmin]">></span>
+            </button>
           </div>
-          <div class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]">
-            <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
-            <p class="text-[2vmin] text-white mt-[5vmin]">Visit to the CU Campus</p>
-            <p class="text-[1.8vmin] mt-[2vmin] text-[#7e838f]">The best-performing ambassadors may have the opportunity
-              to visit the prestigious Tech Invent CU campus, immersing themselves in the vibrant tech environment and
-              enjoying exclusive events.</p>
+          <div class="right">
+            <img class="scale-150" src="/Assets/hgf 1.png" alt="" />
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+        <section
+          class="opp w-full min-h-[70vmin] bg-[#0D0F12] mt-[20vmin] rounded-[3vmin] p-[10vmin] flex flex-col"
+        >
+          <b class="text-[1.5vmin] font-semibold tracking-[0.2vmin] z-20 w-full text-center"
+            >Benefits & Incentives</b
+          >
+          <h1 class="text-[5vmin] font-light z-20 text-white w-full text-center">
+            Grow by helping
+          </h1>
+          <h1 class="text-[5vmin] font-light z-20 text-white w-full text-center">
+            You grow with others
+          </h1>
+          <div class="grid grid-cols-4 mt-[10vmin]">
+            <div
+              class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]"
+            >
+              <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
+              <p class="text-[2vmin] text-white mt-[5vmin]">
+                Get Exclusive Certificates
+              </p>
+              <p class="text-[1.8vmin] mt-[2vmin] text-[#7e838f]">
+                Receive personalized and exclusive certificates of recognition
+                for your contributions as a Tech Invent CU Campus Ambassador,
+                highlighting your leadership and impact.
+              </p>
+            </div>
+            <div
+              class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]"
+            >
+              <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
+              <p class="text-[2vmin] text-white mt-[5vmin]">
+                Networking Opportunities
+              </p>
+              <p class="text-[1.8vmin] mt-[2vmin] text-[#7e838f]">
+                Connect with industry professionals, guest speakers, and fellow
+                ambassadors, expanding your professional network and creating
+                valuable connections.
+              </p>
+            </div>
+            <div
+              class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]"
+            >
+              <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
+              <p class="text-[2vmin] text-white mt-[5vmin]">
+                Campus Ambassador Award
+              </p>
+              <p class="text-[1.8vmin] mt-[2vmin] text-[#7e838f]">
+                Stand a chance to be recognized as the "Campus Ambassador of the
+                Year" based on your exceptional performance and dedication, with
+                a special prize and recognition.
+              </p>
+            </div>
+            <div
+              class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]"
+            >
+              <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
+              <p class="text-[2vmin] text-white mt-[5vmin]">
+                Visit to the CU Campus
+              </p>
+              <p class="text-[1.8vmin] mt-[2vmin] text-[#7e838f]">
+                The best-performing ambassadors may have the opportunity to
+                visit the prestigious Tech Invent CU campus, immersing
+                themselves in the vibrant tech environment and enjoying
+                exclusive events.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
 
-  </section>
+    <!-- FAQ section starts -->
+    <section
+      class="w-full flex flex-col justify-center items-center relative -mt-10"
+    >
+      <div
+        class="landing w-full my-24 flex flex-col justify-center items-center relative"
+      >
+        <b class="uppercase text-[2vmin] mx-[2vmin] cursor-pointer">Rewards</b>
+        <h1 class="text-[4vmin] mb-0" style="color: white">
+          Frequently Asked Questions
+        </h1>
+        <p class="text-[3.5vmin] font-light -mt-1" style="color: rgba(227, 229, 232, 0.52)">for exclusive benefits</p>
+      </div>
+    </section>
 
-  <script type="module" src="/main.js"></script>
-</body>
+    <!-- FAQ Q&As -->
 
+    <section class="w-full flex flex-col justify-center items-center relative">
+      <div class="faq text-[2.5vmin]">
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              What is the Tech Invent Campus Ambassador Program?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              The Tech Invent Campus Ambassador Program is an opportunity for
+              <br />
+              enthusiastic students to represent Tech Invent on their campuses,
+              <br />
+              promote its programs, and foster a vibrant tech community.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              How can I become a Campus Ambassador for Tech Invent CU?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              To become a Campus Ambassador, you can apply through the <br />
+              designated application process outlined on our website. We <br />
+              evaluate applications based on your passion for technology, <br />
+              leadership potential, and dedication to promoting our initiatives.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              What are the responsibilities of a Campus Ambassador?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              As a Campus Ambassador, you will be responsible for promoting
+              <br />
+              Tech Invent CU events and initiatives on your campus, organizing
+              <br />
+              tech-related activities, engaging with your peers, and acting
+              <br />
+              bridge between your campus community and Tech Invent CU.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              Are there any prerequisites to applying for the Campus Ambassador
+              Program?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              To apply for the program you need to have a valid Student ID.
+              <br />
+              We welcome applications from students who are passionate about
+              <br />
+              technology, have strong communication skills, and are motivated
+              <br />
+              to make a positive impact on their campuses.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              What incentives and opportunities are provided to Campus
+              Ambassadors?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              Campus Ambassadors receive exclusive certificates of recognition,
+              <br />
+              priority access to events, networking opportunities with industry
+              <br />
+              professionals, and a chance to be selected as the "Campus <br />
+              Ambassador of the Year." Exceptional ambassadors may also get the
+              <br />
+              opportunity to visit the Tech Invent CU campus and attend upcoming
+              <br />
+              events.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              How long is the Campus Ambassador Program term?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              The Campus Ambassador Program term typically lasts for an academic
+              <br />
+              year, but the duration may vary depending on specific <br />
+              circumstances like the performance of the Campus Ambassador.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              Is the Campus Ambassador Program open to all colleges and
+              universities?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              Yes, the Campus Ambassador Program is open to students from <br />
+              colleges and universities across the country. We encourage <br />
+              students from various academic backgrounds to apply.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              How will I receive guidance and support throughout the program?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              Tech Invent team will provide you with the necessary guidance and
+              <br />
+              support through regular communication channels. You will have a
+              <br />
+              dedicated point of contact from our team to address your queries,
+              <br />
+              provide resources, and offer assistance whenever needed.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              Can I participate in other activities or organisations while being
+              a Campus Ambassador?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              Yes, we encourage our Campus Ambassadors to be involved in other
+              <br />
+              activities and organisations on their campuses. We believe in
+              <br />
+              fostering a well-rounded experience and understanding that <br />
+              students have diverse interests.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+        <details class="mb-4 group">
+          <summary
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
+          >
+            <h1 class="flex flex-1 p-1">
+              How can I provide feedback or suggestions for the program?
+            </h1>
+            <div class="flex w-10 items-center justify-center">
+              <div
+                class="border-8 border-transparent bg-transparent border-l-gray-400 ml-2 group-open:rotate-90 transition-transform origin-left"
+              ></div>
+            </div>
+          </summary>
+          <div class="px-1 pt-0">
+            <p>
+              We value your feedback and suggestions to enhance the Campus
+              <br />
+              Ambassador Program. You can share your thoughts and ideas with us
+              <br />
+              through the designated feedback channels provided during the
+              <br />
+              program.
+            </p>
+          </div>
+        </details>
+        <hr class="my-4 py-2 rounded w-full opacity-30" />
+      </div>
+      <div class="mt-5 mb-10 p-1">
+        <h1 class="text-[2.5vmin] text-gray-400">
+          If you have any other questions or need further clarification, please
+          reach out to us. <br />
+          We're excited to have you join the Tech Invent CU Campus Ambassador
+          Program!
+        </h1>
+      </div>
+    </section>
+    <!-- FAQ section ends -->
+
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
