@@ -27,7 +27,6 @@
   background-color: #0d0e12;
 }
 .landing .overlay {
-  background: url("../Assets/Landing.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
