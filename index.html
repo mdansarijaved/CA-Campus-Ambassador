@@ -51,18 +51,17 @@
           >About us</a
         >
         <a
-          href="#"
+          href="#roles-and-responsibility"
           class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
-          >Roles and reesponsibilities</a
+          >Roles and responsibilities</a
         >
         <a
-          href="#"
+          href="#faq"
           class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
           >FAQ</a
         >
 
         <a
-          href="#"
           class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
           onclick="openModal()"
           >Register</a
@@ -242,7 +241,7 @@
         </section>
       </div>
     </section>
-    <section
+    <section id="roles-and-responsibility"
       class="bg-dark-black landing w-full flex flex-col justify-center items-center my-5 py-10"
     >
       <div class="text-center text-white">
@@ -424,7 +423,7 @@
     </section>
     <!-- timeline section ends -->
     <!-- FAQ section starts -->
-    <section
+    <section id="faq"
       class="w-full flex flex-col justify-center items-center relative -mt-10"
     >
       <div
@@ -449,9 +448,9 @@
       class="w-[70%] mx-auto flex flex-col justify-center items-center relative"
     >
       <div class="faq text-[2.5vmin] w-full">
-        <details class="mb-4 group ">
+        <details class="mb-4 group">
           <summary
-            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative "
+            class="list-none flex flex-wrap items-center cursor-pointer group-open:rounded-b-none group-open:z-[1] relative"
           >
             <h1 class="flex flex-1 p-1 text-white">
               What is the Tech Invent Campus Ambassador Program?
@@ -722,7 +721,7 @@
               class="p-1 text-sm sm:text-xl fa-solid fa-phone hover:text-white"
             ></i
           ></a>
-          <a href="#" class="m-1"
+          <a href="https://instagram.com/techinvent.cu?igshid=Y2IzZGU1MTFhOQ==" class="m-1"
             ><i
               class="p-1 text-sm sm:text-xl fa-brands fa-instagram hover:text-white"
             ></i
@@ -769,6 +768,30 @@
       });
     </script>
 
+    <!-- Landing Animation ends -->
+
+    <!-- Register Modal starts -->
+
+    <div
+      id="registerModal"
+      class="z-20 hidden fixed left-0 top-0 w-full h-full overflow-auto backdrop-blur-xl"
+    >
+      <div
+        class="modal relative bg-transparent my-10 mx-auto w-full box-border p-5"
+      >
+        <span
+          class="cursor-pointer text-3xl font-extrabold float-right text-light-grey hover:text-[#F2F7FF]"
+          onclick="closeModal()"
+          >&times;</span
+        >
+        <iframe
+          id="modalForm"
+          class="w-full h-[90vmax] sm:h-[90vmin]"
+          src="Register.html"
+        ></iframe>
+      </div>
+    </div>
+
     <script>
       function openModal() {
         const modal = document.getElementById("registerModal");
@@ -777,41 +800,21 @@
         modal.style.alignItems = "center";
         modal.style.justifyContent = "center";
         document.body.style.overflow = "hidden";
+        modal.querySelector(".modal").classList.add("modal-open");
       }
 
       function closeModal() {
-        document.getElementById("registerModal").style.display = "none";
-        document.body.style.overflow = "auto";
+        const modal = document.getElementById("registerModal");
+        modal.querySelector(".modal").classList.add("modal-close");
+        setTimeout(function () {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+          modal
+            .querySelector(".modal")
+            .classList.remove("modal-open", "modal-close");
+        }, 500);
       }
-
-      function loadForm() {
-        var modalForm = document.getElementById("modalForm");
-        modalForm.innerHTML =
-          '<iframe class="w-full h-[90vmin]" src="Register.html"></iframe>';
-      }
-
-      window.onload = loadForm;
     </script>
-
-    <!-- Landing Animation ends -->
-
-    <!-- Register Modal starts -->
-
-    <div
-      id="registerModal"
-      class="z-30 hidden fixed left-0 top-0 w-full h-full overflow-auto backdrop-blur-xl"
-    >
-      <div
-        class="modal-content relative bg-transparent my-10 mx-auto w-full box-border p-5"
-      >
-        <span
-          class="cursor-pointer text-3xl font-extrabold float-right text-light-grey hover:text-[#F2F7FF]"
-          onclick="closeModal()"
-          >&times;</span
-        >
-        <iframe class="w-full h-[90vmax] sm:h-[90vmin]" src="Register.html"></iframe>
-      </div>
-    </div>
 
     <!-- Register Modal ends -->
 
