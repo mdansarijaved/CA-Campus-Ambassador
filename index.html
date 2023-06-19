@@ -21,20 +21,31 @@
       <!-- <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]" />
       <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]" /> -->
     </div>
-    <div class="nav flex flex-row justify-center items-center">
+    <div class=" lg:hidden h-8 w-8 " id="menu-btn">
+      <img src="./Assets/menu.png" alt="menu" class="">
+    </div>
+    <div>he</div>
+    <div class="nav lg:flex hidden flex-row justify-center items-center">
       <a href="#"
         class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer">About us</a>
         <a href="#"
         class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer">Roles and reesponsibilities</a>
         <a href="#"
         class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer">FAQ</a>
-      <a href="#"
-        class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer">Tech
-        Invent</a>
+      
       <a href="#"
         class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer">Register</a>
     </div>
   </header>
+  <div class="h-screen w-screen fixed top-0 translate-x-full z-50 bg-dark-black " id="menu">
+    <p class="text-5xl  rounded-xl w-fit bg-dark-black backdrop-blur-sm text-white py-5 px-7">X</p>
+    <ul class="h-full w-full  flex flex-col justify-start pt-44 items-center gap-10 md:gap-16 md:text-4xl text-xl text-white">
+      <li class="">About us</li>
+      <li>Roles and Responsibilities</li>
+      <li>FAQ</li>
+      <li>Register</li>
+    </ul>
+  </div>
   <section class="landing bg-dark-black w-full h-[100vmin] flex flex-col justify-center items-center relative">
     <div class="overlay h-[120vmin] w-full absolute top-0 left-0"></div>
     <b class="text-[1.7vmin] font-semibold tracking-[0.7vmin] z-20">TECH INVENT</b>
@@ -539,6 +550,8 @@
 
   <script type="module" src="/main.js"></script>
   <script type="module" src="/timeline.js"></script>
+  <script type="module" src="/menu.js"></script>
+  
 </body>
 
 </html>
