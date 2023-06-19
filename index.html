@@ -40,8 +40,12 @@
         />
         <!-- <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]" />
       <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]" /> -->
+
       </div>
-      <div class="nav flex flex-row justify-center items-center">
+      <div class=" lg:hidden h-6 w-6 " id="menu-btn">
+        <img src="./Assets/menu.png" alt="menu" class="">
+      </div>
+      <div class="nav hidden lg:flex flex-row justify-center items-center">
         <a
           href="#"
           class="text-[2vmin] text-light-grey hover:text-[#aa3fff] transition-all no-underline mx-[2vmin] cursor-pointer"
@@ -57,11 +61,7 @@
           class="text-[2vmin] text-light-grey hover:text-[#aa3fff] transition-all no-underline mx-[2vmin] cursor-pointer"
           >FAQ</a
         >
-        <a
-          href="#"
-          class="text-[2vmin] text-light-grey hover:text-[#aa3fff] transition-all no-underline mx-[2vmin] cursor-pointer"
-          >Tech Invent</a
-        >
+        
         <a
           href="#"
           class="text-[2vmin] text-light-grey hover:text-[#aa3fff] transition-all no-underline mx-[2vmin] cursor-pointer"
@@ -69,8 +69,7 @@
         >
       </div>
     </header>
-    <section
-      id="landing-anime"
+    <section id="landing-anime"
       class="landing bg-dark-black w-full h-[100vmin] flex flex-col justify-center items-center relative"
     >
       <div class="overlay h-[120vmin] w-full absolute top-0 left-0"></div>
@@ -770,5 +769,6 @@
 
     <script type="module" src="/main.js"></script>
     <script type="module" src="/timeline.js"></script>
+    <script type="module" src="/menu.js"></script>
   </body>
 </html>
