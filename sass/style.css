@@ -29,7 +29,7 @@
 .landing .overlay {
   background: url("../Assets/Landing.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .landing b {
   background: var(--gradient);

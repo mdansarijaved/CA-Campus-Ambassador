@@ -14,10 +14,10 @@
 <body class="bg-dark-black">
   <header class="bg-dark-black absolute z-20 w-full h-[8vmin] flex justify-between items-center px-[8vmin]">
     <div class="logo flex flex-row justify-center items-center">
-      <img class="w-[10vmin] h-[10vmin] mx-[2vmin]" src="./public/Assets/cu.svg" alt="CU-logo">
-      <img class="w-[10vmin] h-[10vmin] mx-[2vmin]" src="./public/Assets/techinvent.svg" alt="techinvent-logo">
-      <img class="w-[10vmin] h-[10vmin] mx-[2vmin]" src="./public/Assets/qs.svg" alt="techinvent-logo">
-      <img class="w-[10vmin] h-[10vmin] mx-[2vmin]" src="./public/Assets/naac.svg" alt="techinvent-logo">
+      <img class="w-[10vmin] h-[10vmin] mx-[2vmin]" src="./Assets/cu.svg" alt="CU-logo">
+      <img class="w-[10vmin] h-[10vmin] mx-[2vmin] " src="./Assets/techinvent.svg" alt="techinvent-logo">
+      <img class="w-[10vmin] h-[10vmin] mx-[2vmin] hidden lg:block" src="./Assets/qs.svg" alt="techinvent-logo">
+      <img class="w-[10vmin] h-[10vmin] mx-[2vmin] hidden lg:block" src="./Assets/naac.svg" alt="techinvent-logo">
       <!-- <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]" />
       <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]" /> -->
     </div>
@@ -32,7 +32,7 @@
   <section class="landing bg-dark-black w-full h-[100vmin] flex flex-col justify-center items-center relative">
     <div class="overlay h-[120vmin] w-full absolute top-0 left-0"></div>
     <b class="text-[1.7vmin] font-semibold tracking-[0.7vmin] z-20">TECH INVENT</b>
-    <h1 class="text-[7vmin] font-light z-20 text-white">
+    <h1 class="lg:text-[7vmin] text-3xl font-light z-20 text-white">
       Become an Ambassador
     </h1>
     <p class="text-[2vmin] font-normal text-center my-[0.5vmin] z-20 text-light-grey">
@@ -46,13 +46,13 @@
       Join Us Now <span class="ml-[1.25vmin]">></span>
     </button>
   </section>
-  <section class="details px-[1vmin] mt-[30vmin]">
-    <div class="content rounded-[3vmin] bg-light-black w-full h-full p-[25vmin] pb-[15vmin] relative">
+  <section class="details lg:px-[1vmin] mt-[30vmin]">
+    <div class="content rounded-[3vmin] bg-light-black w-full h-full p-[15vmin] lg:p-[25vmin] pb-[15vmin] relative">
       <div class="overlay absolute bottom-0 left-1/2 -translate-x-1/2">
         <img src="/Assets/Group.png" alt="" />
       </div>
-      <section class="event flex flex-row justify-between items-center">
-        <div class="left flex flex-col justify-center items-start w-1/2">
+      <section class="event flex  flex-col lg:flex-row justify-between items-center">
+        <div class="left flex flex-col justify-center items-start w-full lg:w-1/2">
           <b class="text-[2vmin] font-semibold tracking-[0.5vmin] z-20 w-full">About The Event</b>
           <h1 class="text-[8vmin] font-light z-20 text-white w-full">
             Biggest Tech Event
@@ -74,8 +74,8 @@
           <img class="scale-150" src="/Assets/vb 1.png" alt="" />
         </div>
       </section>
-      <section class="event flex flex-row-reverse justify-between items-center mt-[20vmin]">
-        <div class="left flex flex-col justify-center items-start w-1/2">
+      <section class="event flex flex-col lg:flex-row-reverse justify-between items-center mt-[20vmin]">
+        <div class="left flex flex-col justify-center items-start lg:w-1/2">
           <b class="text-[2vmin] font-semibold tracking-[0.5vmin] z-20 w-full">About The Event</b>
           <h1 class="text-[8vmin] font-light z-20 text-white w-full">
             Biggest Tech Event
@@ -106,7 +106,7 @@
         <h1 class="text-[5vmin] font-light z-20 text-white w-full text-center">
           You grow with others
         </h1>
-        <div class="grid grid-cols-4 mt-[10vmin]">
+        <div class="flex flex-wrap gap-20 justify-center items-center lg:grid lg:grid-cols-4 mt-[10vmin]">
           <div class="box w-[32vmin] h-[38vmin] bg-light-black rounded-[3vmin] flex flex-col p-[2vmin]">
             <div class="w-[3vmin] h-[3vmin] bg-[#7e838f] rounded-full"></div>
             <p class="text-[2vmin] text-white mt-[5vmin]">
@@ -159,27 +159,27 @@
   <section class="bg-dark-black landing  w-full  flex flex-col justify-center items-center py-36">
     <div class="text-center text-white">
       <b class="text-[1.7vmin] font-semibold tracking-[0.7vmin] z-20">REWARDS</b>
-      <h1 class="text-[7vmin] font-light text-white">Roles and Responsibilities</h1>
+      <h1 class="lg:text-[7vmin] text-[5vmin] font-light text-white">Roles and Responsibilities</h1>
       <p class="pt-4 text-light-grey">As a Campus Ambassador, <br> you will have the following roles and
         responsibilities</p>
     </div>
-    <div class="flex flex-wrap justify-center items-center px-32 gap-9 text-gray-600 py-16">
-      <div class="bg-[#15181e] rounded-xl  w-[500px] p-6">
+    <div class="flex flex-wrap justify-center items-center px-10 lg:px-32 gap-9 text-gray-600 py-16">
+      <div class="bg-[#15181e] rounded-xl w-96  lg:w-[500px] p-6">
         <h3 class="text-lg text-[#fff] py-3">Feedback and Reporting</h3>
         <p>Provide valuable feedback and insights to the Tech Invent team to improve programs and ensure a better
           experience for participants.</p>
       </div>
-      <div class="bg-[#15181e] rounded-xl w-[500px] p-6">
+      <div class="bg-[#15181e] rounded-xl w-96  lg:w-[500px] p-6">
         <h3 class="text-lg text-[#fff] py-3">Promotion and Outreach</h3>
         <p>Promote Tech Invent events, initiatives, and programs through various channels, including social media,
           posters, workshops, and word-of-mouth.</p>
       </div>
-      <div class="bg-[#15181e] rounded-xl w-[500px] p-6">
+      <div class="bg-[#15181e] rounded-xl w-96  lg:w-[500px] p-6">
         <h3 class="text-lg text-[#fff] py-3">Campus Engagement</h3>
         <p>Organize and conduct on-campus activities such as hackathons, tech workshops, seminars and networking events
           to engage and inspire your fellow students.</p>
       </div>
-      <div class="bg-[#15181e] rounded-xl w-[500px] p-6">
+      <div class="bg-[#15181e] rounded-xl w-96  lg:w-[500px] p-6">
         <h3 class="text-lg text-[#fff] py-3">Campus Engagement</h3>
         <p>Be an enthusiastic advocate for Tech Invent, sharing your experiences and encouraging participation among
           your peers.</p>
@@ -523,10 +523,10 @@
   <footer
     class="w-full mt-10 mb-0 py-0 px-4 flex justify-between overflow-x-auto bg-light-black outline outline-zinc-700 text-light-grey text-[2.2vmin] mx-auto">
     <div class="justify-center flex items-center flex-shrink-0">
-      <img class="m-1" src="./public/Assets/cu.svg" alt="CU-logo">
-      <img class="m-1" src="./public/Assets/techinvent.svg" alt="techinvent-logo">
-      <img class="m-1" src="./public/Assets/qs.svg" alt="techinvent-logo">
-      <img class="m-1" src="./public/Assets/naac.svg" alt="techinvent-logo">
+      <img class="m-1" src="./Assets/cu.svg" alt="CU-logo">
+      <img class="m-1" src="./Assets/techinvent.svg" alt="techinvent-logo">
+      <img class="m-1" src="./Assets/qs.svg" alt="techinvent-logo">
+      <img class="m-1" src="./Assets/naac.svg" alt="techinvent-logo">
     </div>
     <div class="justify-between flex items-center flex-shrink-0 mx-auto">
       <p class="m-2 p-2 hover:text-blue-500">©️TechInvent x Chandigarh University</p>
