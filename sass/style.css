@@ -27,6 +27,7 @@
   background-color: #0d0e12;
 }
 .landing .overlay {
+  z-index: -1;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -40,7 +41,7 @@
   box-shadow: 2px 2px 10px rgba(170, 63, 255, 0.8);
 }
 
-.modal-content {
+.modal-open {
   animation-name: modalopen;
   animation-duration: 0.5s;
 }
@@ -53,6 +54,22 @@
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+.modal-close {
+  animation-name: modalclose;
+  animation-duration: 0.5s;
+}
+
+@keyframes modalclose {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.8);
+    opacity: 0;
   }
 }
 
