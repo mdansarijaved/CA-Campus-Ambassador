@@ -40,10 +40,9 @@
         />
         <!-- <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]" />
       <img src="./img/logo.png" alt="logo" class="w-[10vmin] h-[10vmin] mx-[2vmin]" /> -->
-
       </div>
-      <div class=" lg:hidden h-6 w-6 " id="menu-btn">
-        <img src="./Assets/menu.png" alt="menu" class="">
+      <div class="lg:hidden h-6 w-6" id="menu-btn">
+        <img src="./Assets/menu.png" alt="menu" class="" />
       </div>
       <div class="nav hidden lg:flex flex-row justify-center items-center">
         <a
@@ -61,15 +60,17 @@
           class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
           >FAQ</a
         >
-        
+
         <a
           href="#"
           class="text-[2vmin] text-light-grey hover:text-white transition-all no-underline mx-[2vmin] cursor-pointer"
+          onclick="openModal()"
           >Register</a
         >
       </div>
     </header>
-    <section id="landing-anime"
+    <section
+      id="landing-anime"
       class="landing bg-dark-black w-full h-[100vmin] flex flex-col justify-center items-center relative"
     >
       <div class="overlay h-[120vmin] w-full absolute top-0 left-0"></div>
@@ -93,6 +94,7 @@
       </p>
       <button
         class="text-[1.75vmin] px-[3vmin] py-[1.5vmin] font-medium rounded-[25px] my-[3vmin] z-20 cursor-pointer bg-white text-dark-black transition-all hover:scale-[1.1] border-none"
+        onclick="openModal()"
       >
         Join Us Now <span class="ml-[1.25vmin]">></span>
       </button>
@@ -153,8 +155,9 @@
             </p>
             <button
               class="text-[2vmin] px-[3.5vmin] py-[2vmin] font-medium rounded-[50px] my-[5vmin] z-20 cursor-pointer bg-[#22262F] text-white transition-all hover:scale-[1.1] border-none"
+              onclick="openModal()"
             >
-              Register now <span class="ml-[1.25vmin]">></span>
+              Register now<span class="ml-[1.25vmin]">></span>
             </button>
           </div>
           <div class="right">
@@ -291,7 +294,8 @@
     </section>
     <!-- timeline section -->
     <section class="bg-dark-black pb-12 mt-0 pt-2 text-white">
-      <b class="gradientHeading block text-center font-semibold text-[1.75vmin] tracking-widest"
+      <b
+        class="gradientHeading block text-center font-semibold text-[1.75vmin] tracking-widest"
         >Benefits & Incentives</b
       >
       <h2 class="font-light text-center text-[6vmin]">Structure</h2>
@@ -765,7 +769,51 @@
       });
     </script>
 
+    <script>
+      function openModal() {
+        const modal = document.getElementById("registerModal");
+        modal.style.display = "block";
+        modal.style.display = "flex";
+        modal.style.alignItems = "center";
+        modal.style.justifyContent = "center";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        document.getElementById("registerModal").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      function loadForm() {
+        var modalForm = document.getElementById("modalForm");
+        modalForm.innerHTML =
+          '<iframe class="w-full h-[90vmin]" src="Register.html"></iframe>';
+      }
+
+      window.onload = loadForm;
+    </script>
+
     <!-- Landing Animation ends -->
+
+    <!-- Register Modal starts -->
+
+    <div
+      id="registerModal"
+      class="z-30 hidden fixed left-0 top-0 w-full h-full overflow-auto backdrop-blur-xl"
+    >
+      <div
+        class="modal-content relative bg-transparent my-10 mx-auto w-full box-border p-5"
+      >
+        <span
+          class="cursor-pointer text-3xl font-extrabold float-right text-light-grey hover:text-[#F2F7FF]"
+          onclick="closeModal()"
+          >&times;</span
+        >
+        <iframe class="w-full h-[90vmax] sm:h-[90vmin]" src="Register.html"></iframe>
+      </div>
+    </div>
+
+    <!-- Register Modal ends -->
 
     <script type="module" src="/main.js"></script>
     <script type="module" src="/timeline.js"></script>
