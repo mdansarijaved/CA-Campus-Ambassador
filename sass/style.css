@@ -16,10 +16,10 @@
   --white: rgba(227, 229, 232, 0.9);
   --gradient: linear-gradient(
     90deg,
-    #6557ff 0%,
-    #aa3fff 29.43%,
-    #aa3fff 68.23%,
-    #f8522e 100%
+    #ff2200 0%,
+    #cd1010 29.43%,
+    #fd105f 68.23%,
+    #f82e2e 100%
   );
 }
 
